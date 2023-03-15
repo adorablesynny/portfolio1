@@ -1,0 +1,60 @@
+/* main - menu 동그란 메뉴 */
+#main_menu{
+    position:relative;
+    top:0vh;
+    width:100%;
+    height:20vh;
+    padding:0 10% 0 9%;
+}
+.menu_list{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.menu_list .product_menu{
+    padding-top:25px;
+    width:150px;
+    text-align:center;
+}
+.menu_list .product_menu img{
+    display: block;
+    position:relative;
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    padding:10px;
+}
+.menu_list span{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:1.2rem;
+    /* position: absolute; */
+    display:block;
+    margin-top:0px;
+}
+.menu_list .product_menu:hover img{
+    outline:1px solid rgba(0,0,0,0.5);
+    outline-offset:-11px;
+    filter:grayscale(1.5);
+}
+
+/* 준비중 */
+#prepare{
+    height:70vh;
+    width:100%;
+    position: relative;
+}
+#prepare > div{
+    position: absolute;
+    top:100px;
+    left:50%;
+    transform:translateX(-50%);
+}
+#prepare > div img{
+    width:540px;
+}
+
+/* mobile */
+#mob_menu_all{
+    top:-40px;
+}
+

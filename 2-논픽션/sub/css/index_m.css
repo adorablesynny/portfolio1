@@ -1,0 +1,85 @@
+@media (max-width: 1400px) {
+  #main_menu {
+    padding: 0 3% 0 3%;
+  }
+  #main_menu .menu_list .product_menu img {
+    display: block;
+    width: 110px;
+    height: 110px;
+    padding: 10px;
+  }
+  #main_menu .menu_list span {
+    display: block;
+    text-align: center;
+    margin-left: -20px;
+  }
+}
+@media (max-width: 1200px) {
+  #nav #ctr_logo_b img {
+    width: 100px;
+    top: 10px;
+    left: calc(50% - 50px);
+    z-index: 1000;
+  }
+  #nav #left_nav {
+    line-height: 85px;
+    z-index: 998;
+  }
+  #nav #left_nav li:nth-child(3), #nav #left_nav li:nth-child(4) {
+    display: none;
+  }
+  #nav #right_nav {
+    line-height: 85px;
+    z-index: 998;
+  }
+  #nav #right_nav li:nth-child(1), #nav #right_nav li:nth-child(3) {
+    display: none;
+  }
+  #main_menu {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 13vh;
+  }
+  #nav {
+    height: 100%;
+  }
+  #nav #ctr_logo_b {
+    display: none;
+  }
+  #nav #mob_ctr_logo_b {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #nav #mob_ctr_logo_b a {
+    display: block;
+  }
+  #nav #left_nav, #nav #right_nav {
+    display: none;
+  }
+  #mob_menu {
+    display: block;
+  }
+  #prepare {
+    height: 87vh;
+  }
+  footer {
+    height: 110;
+    margin-top: -13vh;
+    padding: 10px;
+    position: fixed;
+  }
+  footer #mb_one_line_footer {
+    line-height: 20px;
+    text-align: left;
+    font-size: 0.8rem;
+    color: #c4c4c4;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+}/*# sourceMappingURL=index_m.css.map */

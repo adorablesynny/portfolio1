@@ -1,0 +1,72 @@
+header{
+    background-color: #fff;
+}
+#nav{
+    & ul li a{
+        text-shadow:0 0 6px rgba(0,0,0,0.3)
+    }
+    & #left_nav>ul>li>a:hover, & #right_nav>ul>li>a:hover{
+        color:#000;
+
+    }
+
+}
+/* 메인 메뉴 - 동그란 메뉴 */
+#main_menu{
+    position:relative;
+    top:14vh;
+    width:100%;
+    height:20vh;
+    padding:0 10% 0 9%;
+    & .menu_list{
+        width:100%;
+        display:flex;
+        justify-content:space-between;
+        & .product_menu{
+            padding-top:25px;
+            width:150px;
+            text-align:center;
+            & img{
+                display: block;
+                position:relative;
+                width:140px;
+                height:140px;
+                border-radius:50%;
+                padding:10px;
+            }
+            &:hover img{
+                outline:1px solid rgba(0,0,0,0.5);
+                outline-offset:-11px;
+                filter:grayscale(1.5);
+            }
+        }
+        & span{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size:1.2rem;
+            display:block;
+            margin-top:0px;
+        }
+    }
+}
+
+/* 준비중 */
+#prepare{
+    height:83vh;
+    width:100%;
+    position: relative;
+    top:5vh;
+    & > div{
+        position: absolute;
+        top:100px;
+        left:50%;
+        transform:translateX(-50%);
+        & img{
+            width:540px;
+        }
+    }
+}
+
+/* 모바일 */
+#mob_menu_all{
+    top:-40px !important;
+}

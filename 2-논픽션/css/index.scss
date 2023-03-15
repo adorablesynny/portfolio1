@@ -1,0 +1,295 @@
+html{ font-size:10px;}
+.clearfix{ content:""; display:block; clear:both;}
+
+/* 스크롤 정보 */
+.scroll{
+    position: fixed;
+    display: block;
+    font-size: 15px;
+    padding:10px 10px 10px 10px;
+    background: rgba(0,0,0,0.5);
+    color:#fff;
+    bottom:0;
+    left:0;
+    z-index:9999;
+    p{
+        color:#fff;
+    }
+}
+
+
+/* 메인 메뉴 */
+#main_img{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    top:-13vh;
+    left:0;
+    overflow:hidden;
+    & .slide_container{
+        width:100%;
+        height:400vh;
+        position: absolute;
+        top:0;
+        left:0;
+        overflow: hidden;
+        & .slide1{
+            width:100%;
+            height:100vh;
+            background: url("../img/main.jpg") no-repeat center center;
+            background-size: cover;
+            position:absolute;
+            top:0;
+            opacity:0;
+            &.effect{
+                animation:slide-img .5s .1s both;
+            }
+            & .main_txt{
+                opacity:0;
+                & div{
+                    text-shadow:0 0px 4px rgba(255,255,255,1);
+                }
+                &.effect{
+                    z-index:99;
+                    animation:slide-txt .8s .5s both;
+                }
+            }
+        }
+        & .slide2{
+            width:100%;
+            height:100vh;
+            background: url("../img/1.jpg") no-repeat center center;
+            background-size: cover;
+            position:absolute;
+            top:100vh;
+            opacity:0;
+            &.effect{
+                animation:slide-img .5s both;
+            }
+            & .main_txt{
+                opacity:0;
+                & div{
+                    color:#fff;
+                    text-shadow:0 0px 4px rgba(0,0,0,1);
+                }
+                &.effect{
+                    animation:slide-txt .8s .7s both;
+                }
+            }
+            & div .box{
+                border:1px solid #fff;
+                background-color: rgba(0,0,0,0.4);
+                &:hover{
+                    background-color: rgba(255,255,255,0.8);
+                    text-shadow:none;
+                    & a{
+                        color:#000;
+                    }
+                }
+                & a{
+                    color:#fff;
+                }
+            }
+        }
+        & .slide3{
+            width:100%;
+            min-height:100vh;
+            background: url("../img/menu_5.jpg") no-repeat center center;
+            background-size: cover;
+            position:absolute;
+            top:100vh;
+            opacity:0;
+            &.effect{
+                animation:slide-img .5s both;
+            }
+            & .main_txt{
+                opacity:0;
+                & div{
+                    // transform:translateY(30px);
+                    text-shadow:0 0px 4px rgba(255,255,255,1);
+                }
+                &.effect{
+                    animation:slide-txt .8s .7s both;
+                }
+            }
+        }
+        & .slide4{    
+            width:100%;
+            height:100vh;
+            background:url("../img/main_4.jpg");
+            background-size: cover;
+            position:absolute;
+            top:300vh;
+            opacity:0;
+            &.effect{
+                animation:slide-img .5s both;
+            }
+            & .main_txt{
+                opacity:0;
+                & div{
+                    text-shadow:0 0px 4px rgba(255,255,255,1);
+                }
+                &.effect{
+                    animation:slide-txt .8s .7s both;
+                }
+            }
+        }
+        & .txt{
+            position:absolute;
+            bottom:40px;
+            left:50%;
+            transform:translateX(-50%);
+            text-align:center;
+            z-index:2;
+        }
+        & .title{
+            font-size:2.7rem;
+            margin-bottom:7px;
+        }
+        & .intro{    
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size:1.6rem;
+            margin-bottom:15px;
+        }
+        & .box{
+            border:1px solid #000;
+            background-color: rgba(255,255,255,0.4);
+            border-radius:5px;
+            width:150px;
+            height:38px;
+            margin:auto;
+            cursor:pointer;
+            transition:all .3s;
+            &:hover{
+                background: rgba(255,255,255,0.8);
+            }
+            & a{
+                display:block;
+                font-size:1.4rem;
+                line-height:38px;
+            }
+        }
+    }
+    & .button{
+        z-index:999;
+        width:20px;
+        height:100px;
+        position: absolute;
+        right:20px;
+        top:50%;
+        & > div{
+            top:5px;
+            width:15px;
+            height:15px;
+            border-radius:15px;
+            background-color: rgba(0,0,0,0.5);
+            margin-bottom:10px;
+            box-shadow:0 0 20px 3px rgba(255,255,255,1);
+            &.active{
+                background-color: #fff;
+                filter:blur(0);
+            }
+        }
+    }
+}
+
+/* 매거진 */
+#magazine{
+    width:100vw;
+    height:87vh;
+    position:relative;
+    overflow:hidden;
+    & #magazine_in{
+        width:100%;
+        height:87vh;
+        padding:0 6% 0 6%;
+        position:absolute;
+        & .mag_main{
+            float:left;
+            border-right:1px solid #000;
+            width:26%;
+            min-width:350px;
+            height:87vh;
+            & .mag_main_img {
+                &:hover img{
+                    filter:grayscale(1);
+                }
+            & img{
+                width:75%;
+                height:auto;
+                margin:30% 6% 20px 0;
+                border-radius:5px;
+                box-shadow:0 0 10px 3px rgba(0,0,0,0.3);
+                transition:all .5s;
+                }
+            }
+            & .mag_main_txt{
+                text-align:center;
+                width: 75%;
+                & .mag_main_t{
+                    font-size:1.7rem;
+                    font-weight:800;
+                }
+                & .mag_main_st{
+                    margin-top:10px;
+                    font-size:1.6rem;
+                    font-weight:500;
+                }
+                & .mag_main_it{
+                    margin-top:17px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size:1.5rem;
+                    line-height:22px;
+                }
+            }
+        }
+        & .mag_contents{
+            width:74%;
+            height:100%;
+            position:relative;
+            float:left;
+            overflow-x:hidden;
+            & .mag_contents_wrap{
+                position: relative;
+                width:1000px;
+                height:100%;
+                display:flex;   
+                & .mag_contents_in{
+                    padding-top:20%;
+                    margin-left:1vw;
+                    & img{
+                        width:100%;
+                        height:auto;
+                        transition:all .5s;
+                    }
+                    & .mag_img {
+                        & .mag_img_box{
+                            width:13vw;
+                            height:17vw;
+                            overflow:hidden;
+                            &:hover img{
+                                transform:scale(1.3);
+                                filter:blur(5px);
+                            }
+                            & img{
+                                width:100%;
+                                height:100%;
+                            }
+                        }
+                        & .mag_in_t{
+                            display:block;
+                            font-size:1.6rem;
+                            margin-top:10px;
+                            margin-bottom:10px;
+                            font-weight:500;
+                        }
+                        & .mag_in_st{
+                            font-size:1.4rem;
+                            font-family: 'Noto Sans KR', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
