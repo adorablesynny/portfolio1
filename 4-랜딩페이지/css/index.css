@@ -336,6 +336,7 @@ h2.blink::after{
     display: inline-block;
     min-width: 1.1vw;
     opacity: 0;
+    transition:opacity .5s .6s;
 }
 #page1 .middle-content .name span.show{
     opacity: 1;
@@ -351,7 +352,7 @@ h2.blink::after{
     height:90px;
     margin:0 0 -5px 30px;
     background-color: var(--maincolor);
-    animation:textblink .9s 3.5s infinite;
+    animation:textblink .9s 4.5s infinite;
     opacity:0;
 }
 @keyframes textblink{
